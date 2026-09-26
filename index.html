@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бат-Өлзий Намуунзул - Товч CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f7bde2 0%, #f7c1eb 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .cv-container {
+            background: #ff95d8;
+            width: 100%;
+            max-width: 650px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(203, 202, 202, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .cv-container:hover {
+            transform: translateY(-5px);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #425575;
+            margin-bottom: 8px;
+        }
+        p {
+            color: #4a5568;
+            font-size: 15px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #7c0d0d;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid #e8f15f;
+            padding-left: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            background: #c5e8ff;
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+        ul li::before {
+            content: "✦";
+            color: #3182ce;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        .contact-link {
+            display: inline-block;
+            background: #87248d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease, box-shadow 0.2s ease;
+        }
+        .contact-link:hover {
+            background: #2b6cb0;
+            box-shadow: 0 4px 12px rgba(36, 150, 78, 0.3);
+        }
+    </style>
+</head>
+<body>
+<img src="me4.png" alt="зураг" class="profile-img">
+    <div class="cv-container">
+        <header>
+            <h1>Бат-Өлзий Намуунзул </h1>
+            <p> B251870304 </p>
+        </header>
+        <section>
+            <h2>Миний тухай</h2>
+            <p> Мэдээлэл, холбооны технологийн сургууль. Кибер аюулгүй байдлын 2-р дамжаанд суралцдаг. Веб зохиомж хичээлийн анхны лаборатори. </p>
+        </section>
+        <section>
+            <h2>Эзэмшсэн чадварууд</h2>
+            <ul>
+                <li>HTML5 & CSS3 үндэс</li>
+                <li>Git & GitHub хувилбар удирдлага</li>
+                <li>Программчлалын С++ хэл</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Холбоо барих</h2>
+            <p>Миний GitHub профайлтай танилцах:</p>
+            <br>
+            <a href="https://github.com/namuunzul234-svg" target="_blank" class="contact-link">GitHub Холбоос</a>
+        </section>
+    </div>
+
+</body>
+</html>
