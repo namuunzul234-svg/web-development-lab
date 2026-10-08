@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний танилцуулга</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS холбосон хэсэг -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-seedling"></i></div>
+                <span>Миний мэдээлэл</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Танилцуулга</a></li>
+                    <li><a href="#interests">Миний сонирхол</a></li>
+                    <li><a href="#grades">Миний дүн</a></li>
+                    <li><a href="#register">Бүртгэл</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="about" class="card">
+            <div class="hero-section">
+                <article class="hero-text">
+                    <span class="badge"><i class="fa-solid fa-heart"></i> Вэб хөгжүүлэгч оюутан</span>
+                    <h1>Сайн байна уу? Намайг <br><span>Б.Намуунзул</span> гэдэг.</h1>
+                    <p>Би вэб технологи сонирхон судалж, хэрэглэгчдэд ээлтэй, цэвэрхэн загвартай хуудсуудыг бүтээх дуртай. Энэхүү хуудсаар дамжуулан миний сонирхол, дүн болон бүртгэлийн анкетаар зочлох боломжтой.</p>
+                </article>
+                <div class="avatar-box">
+                    <img src="https://placehold.co/400x400/ffe4e6/e11d48?text=Миний+Зураг" alt="Profile Picture" onerror="this.src='https://placehold.co/400x400/f1f5f9/475569?text=Avatar'">
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="card">
+            <div class="section-title-box">
+                <i class="fa-solid fa-star text-xl"></i>
+                <h2>Миний сонирхол</h2>
+            </div>
+            <p style="color: #64748b; font-size: 0.9rem;">Чөлөөт цагаараа хийх дуртай 3 гол зүйл:</p>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <h3>1. Аялах, зугаалах</h3>
+                    <p>Шинэ газар очиж үзэх, байгальд амарч эрч хүч авах.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>2. Ном унших</h3>
+                    <p>Технологийн шинэ санаа, сэтгэлгээний болон уран зохиолын ном.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>3. Хөгжим сонсох</h3>
+                    <p>Тайван аялгуу сонсонгоо код бичих болон шинэ зүйл сурах.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="grades" class="card">
+            <div class="section-title-box">
+                <i class="fa-solid fa-graduation-cap text-xl"></i>
+                <h2>Миний дүн</h2>
+            </div>
+            <p style="color: #64748b; font-size: 0.9rem;">Сүүлийн улирлын гол хичээлүүдийн амжилт:</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Хичээлийн нэр</th>
+                            <th>Гүйцэтгэл</th>
+                            <th>Үнэлгээ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td style="font-weight: 600;">Мэргэжлийн удиртгал</td>
+                            <td>100%</td>
+                            <td><span class="grade-tag">A (Онц)</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td style="font-weight: 600;">Монголын түүх</td>
+                            <td>92%</td>
+                            <td><span class="grade-tag">A- (Сайн)</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td style="font-weight: 600;">Өгөгдлийн Бүтэц</td>
+                            <td>88%</td>
+                            <td><span class="grade-tag">B+ (Сайн)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="register" class="card">
+            <div class="section-title-box">
+                <i class="fa-solid fa-user-pen text-xl"></i>
+                <h2>Хэрэглэгчийн бүртгэлийн анкет</h2>
+            </div>
+            <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 20px;">Доорх мэдээллийг бүрэн гүйцэд бөглөнө үү.</p>
+
+            <form id="registrationForm" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Бүтэн нэр <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="fullName" name="fullName" required minlength="3" placeholder="Жишээ: Тэмүүлэн Бат">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Цахим шуудан (Email) <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" required placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Нууц үг <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" required minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Дор хаяж 6 тэмдэгт (Тоо, том үсэг)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Төрсөн огноо <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-calendar"></i>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="education">Боловсролын түвшин</label>
+                        <select id="education" name="education">
+                            <option value="student">Оюутан</option>
+                            <option value="bachelor">Бакалавр</option>
+                            <option value="master">Магистр</option>
+                            <option value="other">Бусад</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="avatarFile">Хавсаргах файл (Зураг)</label>
+                        <input type="file" id="avatarFile" name="avatarFile" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Хүйс</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" checked> Эрэгтэй
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female"> Эмэгтэй
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Сониррох чиглэлүүд (Checkbox)</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-box">
+                                <input type="checkbox" name="interestsList" value="frontend"> Frontend
+                            </label>
+                            <label class="checkbox-box">
+                                <input type="checkbox" name="interestsList" value="backend"> Backend
+                            </label>
+                            <label class="checkbox-box">
+                                <input type="checkbox" name="interestsList" value="design"> UI/UX Design
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="bio">Өөрийн тухай товч (Textarea)</label>
+                        <textarea id="bio" name="bio" rows="3" placeholder="Өөрийн зорилго болон туршлагаасаа бичнэ үү..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit" class="submit-btn">Анкет илгээх</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div id="successBox" class="success-box">
+                <i class="fa-solid fa-circle-check text-2xl text-emerald-600"></i>
+                <div>
+                    <strong>Амжилттай бүртгэгдлээ!</strong>
+                    <p style="font-size: 0.8rem; margin-top: 2px;">Таны анкет амжилттай илгээгдлээ. Баярлалаа.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Бүх эрх хуулиар хамгаалагдсан.</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const successBox = document.getElementById('successBox');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            successBox.classList.add('show');
+            form.reset();
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
